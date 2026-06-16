@@ -1,0 +1,31 @@
+# ONYX — Adversarial Identity Protection Platform
+# Team Inertia — Hackathon 2025
+# Member 1: AI/ML Engineer
+# Install: pip install -r requirements.txt
+
+# ── Core ML / PyTorch ──────────────────────────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ── Face Detection ─────────────────────────────────────────────────────────────
+face_recognition>=1.3.0          # dlib-based; requires cmake & dlib
+opencv-python>=4.8.0
+mediapipe>=0.10.0                 # alternative face detection backend
+
+# ── Audio Processing ───────────────────────────────────────────────────────────
+librosa>=0.10.0
+scipy>=1.10.0
+soundfile>=0.12.0                 # WAV read/write (replaces audioread for output)
+
+# ── Image Utilities ────────────────────────────────────────────────────────────
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# ── API Server ─────────────────────────────────────────────────────────────────
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-multipart>=0.0.6           # required for FastAPI file uploads
+
+# ── Optional (install if available) ────────────────────────────────────────────
+# deepface>=0.0.79                # alternative embedding backend
+# tf-keras>=2.12.0                # required by deepface if used
