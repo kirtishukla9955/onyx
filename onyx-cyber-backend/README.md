@@ -55,3 +55,13 @@ You can explore and test the endpoints directly using the auto-generated Swagger
   - **Output:** JSON returning the `recipient_name` of the leaked copy if a match is found.
 - **`GET /recipients`**
   - **Output:** JSON array of all registered recipients.
+
+---
+
+## License
+
+MIT License — see `LICENSE` for details.
+
+---
+
+**ONYX. Protect before you post. Predict before you publish.**
