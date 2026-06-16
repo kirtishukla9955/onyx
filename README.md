@@ -208,4 +208,4 @@ MIT License — see `LICENSE` for details.
 
 ---
 
-**ONYX. Protect before you post. Predict before you publish.**
+**ONYX. Protect before you post. Predict before you publish.**
