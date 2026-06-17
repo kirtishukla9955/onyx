@@ -1,0 +1,10 @@
+[build]
+  base = "onyx-frontend"
+  publish = "dist"
+  command = "npm run build"
+
+# SPA routing: redirect all paths to index.html so React Router handles the URL
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
