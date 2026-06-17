@@ -43,3 +43,6 @@ ENV/src
 
 # Docker
 .dockerignore
+__pycache__/
+.env
+*.pyc
