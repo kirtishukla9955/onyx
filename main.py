@@ -42,3 +42,11 @@ def health_check():
     Simple health check endpoint returning status and version.
     """
     return HealthResponse(status="ok", version="1.0.0")
+
+# Root Route (For Railway Healthchecks)
+@app.get("/", tags=["System"])
+def root_check():
+    """
+    Root endpoint for default PaaS healthchecks (e.g. Railway).
+    """
+    return {"status": "ok", "service": "ONYX Backend"}
