@@ -1,10 +1,11 @@
 // Central place for every backend base URL.
-// Change these three lines if your ports/hosts ever differ —
-// nothing else in the app needs to know about it.
+// We use VITE_API_URL for production (Render) and default to localhost:8000 for local dev
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 export const API_BASE = {
-  cyber: 'http://localhost:8001',
-  ml: 'http://localhost:8002',
-  trend: 'http://localhost:8003',
+  cyber: BASE_URL,
+  ml: BASE_URL,
+  trend: BASE_URL,
 };
 
 // Generic POST helper for multipart/form-data (file uploads).
