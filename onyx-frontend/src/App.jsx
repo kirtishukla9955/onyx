@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
-import ProtectedRoute from './lib/ProtectedRoute';
+import ProtectedRoute from './lib/ProtectedRoute.jsx';
 
 import Landing from './pages/Landing';
 import Signup from './pages/Signup';
