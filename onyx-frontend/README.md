@@ -204,3 +204,40 @@ onyx-frontend/
 | `alert-red` | `#FF3B5C` | Tamper / failure states |
 
 Fonts: **Chakra Petch** (display/headlines), **Inter** (body), **JetBrains Mono** (terminal, data labels, eyebrow labels).
+## Deployment
+
+### Frontend Deployment (Netlify)
+
+- Hosted on Netlify for fast and reliable frontend delivery.
+- Automatic deployments from GitHub on every push.
+- Global CDN support for low-latency access.
+- HTTPS enabled with free SSL certificates.
+- Preview deployments for testing new features.
+- Optimized static asset caching for improved performance.
+- Easy environment variable management.
+- Quick rollback to previous stable versions.
+
+### Backend Deployment (Railway)
+
+- Backend services hosted on Railway cloud infrastructure.
+- Automatic deployment from GitHub repository updates.
+- Secure environment variable and secret management.
+- Real-time deployment logs for monitoring and debugging.
+- Reliable API hosting with HTTPS support.
+- Easy integration with databases and third-party services.
+- Scalable infrastructure to support future growth.
+- Minimal configuration required for deployment.
+
+### Deployment Architecture
+
+Frontend (React + Vite) → Netlify
+
+Backend (Flask/Python API) → Railway
+
+Database & Services → Connected through secure API endpoints
+
+Benefits:
+- Automated CI/CD pipeline
+- Fast and secure deployments
+- Easy maintenance and updates
+- Production-ready hosting environment
