@@ -9,7 +9,11 @@ from models.schemas import HealthResponse
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Automatically create database tables if they do not exist
-    Base.metadata.create_all(bind=engine)
+    try:
+        Base.metadata.create_all(bind=engine)
+        print("Database connected successfully.")
+    except Exception as e:
+        print(f"WARNING: Could not connect to the database. Ensure DATABASE_URL is set correctly. Error: {e}")
     yield
 
 app = FastAPI(
